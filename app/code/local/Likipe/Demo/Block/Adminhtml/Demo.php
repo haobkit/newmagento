@@ -1,0 +1,22 @@
+<?php
+
+/*
+  Document   : Demo
+  Created on : Aug 21, 2014, 11:17:23 AM
+  Author     : Harrison
+  Description:
+ */
+?>
+<?php
+     
+class Likipe_Demo_Block_Adminhtml_Demo extends Mage_Adminhtml_Block_Widget_Grid_Container
+{
+    public function __construct()
+    {
+        $this->_controller = 'adminhtml_demo';
+        $this->_blockGroup = 'demo';
+        $this->_headerText = Mage::helper('demo')->__('Item Manager');
+        $this->_addButtonLabel = Mage::helper('demo')->__('Add Item');
+        parent::__construct();
+    }
+}

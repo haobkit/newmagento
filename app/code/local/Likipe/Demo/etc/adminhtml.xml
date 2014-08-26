@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<config>
+<!--    <menu>
+        <demo module="demo">
+            <title>Demo</title>
+            <sort_order>71</sort_order>               
+            <children>
+                <items module="demo">
+                    <title>Manage Items</title>
+                    <sort_order>0</sort_order>
+                    <action>demo/adminhtml_demo</action>
+                </items>
+            </children>
+        </demo>
+    </menu>-->
+    <menu>
+        <demo module="demo">
+            <title>Demo</title>
+            <sort_order>71</sort_order>               
+            <children>
+                <items module="demo">
+                    <title>Manage Items</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/demo</action>
+                </items>
+            </children>
+        </demo>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <demo>
+                        <title>Demo Module</title>
+                        <sort_order>200</sort_order>
+                    </demo>
+                </children>
+            </admin>
+        </resources>   
+    </acl>
+    <layout>
+        <updates>
+            <demo>
+                <file>demo.xml</file>
+            </demo>
+        </updates>
+    </layout>
+</config>
